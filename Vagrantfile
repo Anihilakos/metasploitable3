@@ -41,7 +41,7 @@ Vagrant.configure("2") do |config|
     win2k8.winrm.retry_delay = 10
 
     #win2k8.vm.network "private_network", ip: "172.28.128.4"
-    win2k8.vm.network "public_network", ip: '192.168.1.224'
+    win2k8.vm.network "public_network"
     win2k8.vm.provider "libvirt" do |v|
       v.memory = 4096
       v.cpus = 2
